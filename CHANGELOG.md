@@ -7,6 +7,7 @@
   - Added support for prefixed configs via `TailwindCombine.Config.new(prefix: ...)`.
   - Improved merge input handling for nested lists with `nil` and `false` values.
   - Greatly expanded parity coverage against the upstream JS test suite.
+  - Fixed a compiler warning by pinning the bound `index` variable inside a bitstring `size(...)` match.
 
 ## 0.3.1
 

@@ -260,7 +260,7 @@ defmodule TailwindCombine.Class do
          postfix,
          index
        ) do
-    <<_::binary-size(index), current::utf8, _::binary>> = class
+    <<_::binary-size(^index), current::utf8, _::binary>> = class
 
     cond do
       bracket_depth == 0 and paren_depth == 0 and current == ?: ->
