@@ -1244,10 +1244,6 @@ defmodule TailwindCombine.Config do
        [
          {"divide", ~w(solid dashed dotted double none)}
        ]},
-      {"divide-style",
-       [
-         {"divide", ~w(solid dashed dotted double none)}
-       ]},
       {"outline-width",
        [
          {"outline", [{Validator, :integer?}, {Validator, :arbitrary_length?}]}
@@ -1925,7 +1921,7 @@ defmodule TailwindCombine.Config do
       {"border-width-y", ~w(border-width-t border-width-b border-width-bs border-width-be)},
       {"border-color",
        ~w(border-color-s border-color-e border-color-bs border-color-be border-color-t border-color-r border-color-b border-color-l)},
-      {"border-color-x", ~w(border-color-r border-color-l")},
+      {"border-color-x", ~w(border-color-r border-color-l)},
       {"border-color-y", ~w(border-color-t border-color-b border-color-bs border-color-be)},
       {"border-spacing", ~w(border-spacing-x border-spacing-y)},
       {"scroll-m",
